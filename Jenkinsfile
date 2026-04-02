@@ -1,8 +1,8 @@
 pipeline {
-    agent {label 'Agent-1'}
+    agent any
     tools {
-        jdk 'jdk17'
-        maven 'mvn3.9'
+        jdk 'Jdk-17'    // Must match the name configured in Global Tools
+        maven 'mvn-3.6'  // Must match the name configured in Global Tools
     }
 
     stages {
